@@ -18,7 +18,9 @@ let humanScore = 0
 let computerScore  = 0
 
 function playRound (humanChoice, computerChoice) {
-    if (humanChoice == 'rock' && computerChoice == 'scissor' || humanChoice == 'paper' && computerChoice == 'rock' || humanChoice == 'scissor' && computerChoice == 'paper') {
+    if (humanChoice == 'rock' && computerChoice == 'scissor' 
+        || humanChoice == 'paper' && computerChoice == 'rock' 
+        || humanChoice == 'scissor' && computerChoice == 'paper') {
         console.log(`You win! ${humanChoice} beat ${computerChoice}`)
         humanScore += 1
     } else {
