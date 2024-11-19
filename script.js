@@ -47,5 +47,5 @@ if ( humanScore > computerScore ) {
 } else if ( humanScore < computerScore ) {
     console.log(`result: computer win! socre ${computerScore} : ${humanScore} for computer`)
 } else {
-    console.log('reult: Tie!')
+    console.log('result: Tie!')
 }
