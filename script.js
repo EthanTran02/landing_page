@@ -8,4 +8,8 @@ function getComputerChoice() {
         return 'scissor'
     }
 }
-console.log(getComputerChoice())
+
+function getHumanChoice() {
+    let input = prompt('type: rock, paper, or scissor')
+    return input
+}
