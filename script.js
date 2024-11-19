@@ -31,14 +31,21 @@ function playRound (humanChoice, computerChoice) {
     }
 }
 
-let humanSelection = getHumanChoice().toLowerCase()
-let computerSelection = getComputerChoice().toLowerCase()
+
 
 function playGame (){
-    for (let i = 0; i < 5; i++) 
-        playRound(getHumanChoice(), getComputerChoice())
-}
+    for (let i = 0; i < 5; i++) {
+        let humanSelection = getHumanChoice().toLowerCase()
+        let computerSelection = getComputerChoice().toLowerCase()
+        playRound(humanSelection, computerSelection)
+}}
 
 playGame()
 
-console.log(`${humanScore}  ${computerScore}`)
+if ( humanScore > computerScore ) {
+    console.log(`result: human win! socre ${humanScore} : ${computerScore} for human`)
+} else if ( humanScore < computerScore ) {
+    console.log(`result: computer win! socre ${computerScore} : ${humanScore} for computer`)
+} else {
+    console.log('reult: Tie!')
+}
